@@ -3,6 +3,7 @@ import Button from "./Button.jsx";
 import Form from "./Form.jsx";
 import Counter from "./Counter.jsx";
 import LikeButton from "./LikeButton.jsx"
+import LudoBoard from "./LudoBoard.jsx";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <> 
       <h2 className="block" style={{textAlign:"center"}}>Blockbuster Deals | Shop Now</h2>  
       <ProductTab />
+      <LudoBoard />
       <Button /> 
       <Form /> 
       <Counter /> 
