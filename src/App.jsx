@@ -4,6 +4,7 @@ import Form from "./Form.jsx";
 import Counter from "./Counter.jsx";
 import LikeButton from "./LikeButton.jsx"
 import LudoBoard from "./LudoBoard.jsx";
+import TodoList from "./TodoList.jsx";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <> 
       <h2 className="block" style={{textAlign:"center"}}>Blockbuster Deals | Shop Now</h2>  
       <ProductTab />
+      <TodoList />
       <LudoBoard />
       <Button /> 
       <Form /> 
