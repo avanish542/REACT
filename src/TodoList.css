@@ -2,20 +2,24 @@
     text-align: center;
     margin-top: 100px;
     margin-bottom: 50px;
+    background-color: lightpink;
 }
 .inp {
     width: 300px;
     height: 50px;
     border-radius: 10px;
+    margin-top: 10px;
 }
 
 .btn {
     width: 100px;
     height: 40px;
     border-radius: 20px;
+    border-color: black;
 }
 
 .list {
     text-align: center;
+    margin-bottom: 10px;
     
 }

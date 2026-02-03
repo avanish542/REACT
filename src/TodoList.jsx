@@ -25,6 +25,34 @@ function TodoList() {
             return prevtodos.filter(todo => todo.id !== id);
         });
     };
+
+    let upperCaseAll = () => {
+        settodos((prevtodos) => {
+        return prevtodos.map((todo) => {
+                return {
+                    ...todo,
+                    task: todo.task.toUpperCase(),
+                };
+            });
+        });
+    };
+
+    let UpperCaseOne = (id) => {
+      settodos((prevtodos) => 
+         prevtodos.map((todo) => {
+            if(todo.id === id) {
+                return {
+                    ...todo,
+                    task: todo.task.toUpperCase(),
+                };
+            } else {
+                return todo;
+            }
+        })
+      );
+    };
+
+
     return ( 
         <div className="todolist"> 
             <input placeholder="add a task" className="inp" value={newTodo} onChange={UpdateTodoValue}></input>
@@ -33,15 +61,19 @@ function TodoList() {
             <br /> <br /> <br /> <br />
             <hr/>
             <h1>Task Todo</h1>
-            <ul className="list">
+            <ul >
                 {todos.map((todo) =>  {
-                 return <li key={todo.id}>
+                 return <li key={todo.id} className="list">
                     <span>{todo.task}</span>
                     &nbsp;  &nbsp;  &nbsp;
                     <button style={{backgroundColor:"white"}} onClick= {() => deletetodo(todo.id)}>delete</button>
+                    &nbsp;  &nbsp;  &nbsp;
+                    <button style={{backgroundColor:"white"}} onClick= {() => UpperCaseOne(todo.id)}>Update One</button>
                 </li>
                 })}
             </ul>
+            <br /> <br /> 
+            <button onClick={upperCaseAll}>UpdateAll</button>
         </div>
      );
 }
