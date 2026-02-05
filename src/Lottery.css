@@ -1,0 +1,10 @@
+.lottery {
+    text-align: center;
+    margin-top: 125px;
+}
+.ticket {
+    border: 1px, solid, black;
+    border-radius: 14px;
+    display: inline-block;
+    padding: 0% 8%;    
+}

@@ -5,13 +5,13 @@ import { v4 as uuidv4 } from 'uuid';
 
 function TodoList() {
 
-    let [todos, settodos] = useState([{task: "sample-task", id: uuidv4()}]);
+    let [todos, settodos] = useState([{task: "sample-task", id: uuidv4(), isDone:false }]);
     let [newTodo, setNewTodo] = useState("");
 
     let addNewTask = () => {
         console.log("Adding a new task in todo");
         settodos((prevtodos) => {
-            return [...prevtodos, {task: newTodo, id: uuidv4() }]
+            return [...prevtodos, {task: newTodo, id: uuidv4(), isDone: false  }]
         });
         setNewTodo("");
     };
