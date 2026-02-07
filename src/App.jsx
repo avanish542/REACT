@@ -6,6 +6,7 @@ import LikeButton from "./LikeButton.jsx"
 import LudoBoard from "./LudoBoard.jsx";
 import TodoList from "./TodoList.jsx";
 import Lottery from "./Lottery.jsx";
+import GuessGame from "./GuessGame.jsx";
 
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
       <Form /> 
       <Counter /> 
       <LikeButton />
-      <Lottery/>        
+      <Lottery/> 
+      <GuessGame />       
     </>
   )
 }
