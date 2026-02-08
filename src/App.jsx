@@ -23,7 +23,8 @@ function App() {
       <Counter /> 
       <LikeButton />
       <Lottery/> 
-      <GuessGame />       
+      <GuessGame />
+      <Simple />       
     </>
   )
 }
